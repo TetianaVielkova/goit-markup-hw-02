@@ -50,6 +50,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    font-style: normal;
 }
 
 .visually-hidden {
@@ -89,8 +90,12 @@ a {
     color: var(--accent-color);
     padding: 25px 93px 25px 0;
 }
-.current {
+
+.logo-black {
     color: var(--color-logo-dark);
+}
+.current {
+    color: var(--accent-color);
 }
 
 .nav-list {
@@ -135,6 +140,11 @@ a {
 
 .header-email {
     margin-right: 50px;
+}
+
+.line {
+    border: 1px solid #ECECEC;
+    width: 100%;
 }
 
 
@@ -206,6 +216,7 @@ a {
     font-family: var(--main-font);
     font-weight: 700;
     line-height: 1.14;
+    font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -364,6 +375,7 @@ a {
 .portfolio-button:hover,
 .portfolio-button:focus {
     background-color: var(--accent-color);
+    color: var(--color-light-title);
 }
 .cards-list {
     display: flex;
@@ -377,6 +389,11 @@ a {
     margin-bottom: 30px;
 }
 
+.cards-item:hover,
+.cards-item:focus {
+    box-shadow: 0px 3px 5px var(--color-dark-subtitle) ;
+}
+
 .cards-img {
     padding-bottom: 20px;
 }
@@ -386,6 +403,7 @@ a {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-left: 20px;
 
     color: var(--color-dark-subtitle);
 }
@@ -394,5 +412,7 @@ a {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    padding-left: 20px;
+
     color: var(--main-color);
 }
