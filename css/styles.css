@@ -269,7 +269,8 @@ a {
 
 .team-item:hover,
 .team-item:focus {
-    box-shadow: 0px 3px 5px var(--color-dark-subtitle) ;
+    box-shadow: 0px 3px 5px var(--color-dark-subtitle);
+    cursor: pointer;
 }
 
 .team-item:not(:last-child) {
@@ -374,7 +375,8 @@ a {
 .portfolio-button:hover,
 .portfolio-button:focus {
     background-color: var(--accent-color);
-    color: var(--color-light-title)
+    color: var(--color-light-title);
+    cursor: pointer;
 }
 .cards-list {
     display: flex;
