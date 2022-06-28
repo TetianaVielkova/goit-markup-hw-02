@@ -28,8 +28,10 @@ body {
 }
 
 .container{
-    max-width: 1170px;
-    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title {
@@ -46,6 +48,7 @@ body {
 .list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -72,6 +75,8 @@ a {
     padding: 0;
     background-color: var(--color-light-title);
     margin: 0;
+    border: 1px solid #ECECEC;
+    width: 100%;
 }
 
 .header > .container {
@@ -91,21 +96,29 @@ a {
     letter-spacing: 0.03em;
 
     color: var(--accent-color);
-    padding: 25px 93px 25px 0;
+    margin-right: 93px;
 }
 .current {
     color: var(--accent-color);;
 }
 
 .nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+
     font-family: var(--main-font);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--color-dark-subtitle);
-    display: flex;
-    align-items: center;
 }
 
 .nav-item:hover,
@@ -120,7 +133,7 @@ a {
 .header-contact {
     display: flex;
     align-items: center;
-    margin: 0 0 0 250px;
+    margin-left: auto;
 }
 
 .contact-item {
@@ -141,10 +154,6 @@ a {
     margin-right: 50px;
 }
 
-.line {
-    border: 1px solid #ECECEC;
-    width: 100%;
-}
 
 
 /*---------------HERO----------------*/
@@ -189,7 +198,8 @@ a {
     cursor: pointer;
 
     padding: 10px 32px;
-    margin: 0 auto;
+    margin-left:  auto;
+    margin-right: auto;
     display: block;
     margin-top: 30px;
 }
@@ -209,7 +219,7 @@ a {
 .advantages-item {
     padding: 0 15px;
     flex: 0 1 25%;
-    margin: 94px 0;
+    margin-top: 94px;
 }
 .advantages-subtitle {
     font-family: var(--main-font);
@@ -232,17 +242,24 @@ a {
 /*-------------Чем мы занимаемся----------==*/
 
 .services-title {
-    margin-bottom: 50px;
+    margin-top: 94px;
 }
 
 .services-list {
     display: flex;
+    margin-top: 50px;
+    margin-bottom: 94px;
 }
 .services-item {
-    flex: 0 1 33.333%;
+    flex-basis: calc((100%-60px)/3);
 }
+
+.services-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .services-img {
-    margin-bottom: 94px;
+    display: block;
 }
 
 /*------------Team------------------*/
@@ -255,13 +272,18 @@ a {
 .team-title {
     padding-top: 94px;
 }
+.team-img {
+    display: block;
+}
 
 .team-list {
     display: flex;
-    padding-bottom: 94px;
+    margin-top: 50px;
+    margin-bottom: 94px;
 }
+
 .team-item {
-    flex: 0 1 25%;
+    flex-basis: calc((100%-90px)/4);
     background: var(--color-light-title);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -304,7 +326,7 @@ a {
 .footer {
     background-color: var(--dark-background);
     padding: 60px 0 20px 0;
-    margin: -10px 0 0 0;
+    margin: 0;
 }
 
 .logo-footer {
@@ -315,12 +337,17 @@ a {
     color: var(--color-light-title);
 }
 
+.footer-list{
+    margin-top: 20px;
+}
+
 .address {
     font-family: var(--main-font);
     line-height: 1.71;
     letter-spacing: 0.03em;
 
     color: var(--color-light-title);
+    margin-top: 20px;
 }
 .footer-email {
     font-family: var(--main-font);
@@ -343,18 +370,20 @@ a {
 /*--------------Portfolio--------*/
 
 .container-portfolio {
-    max-width: 1212px;
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
 }
 .portfolio-button-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 94px 0 34px 0;
+    margin-top: 94px;
 }
 
 .portfolio-button-item:not(:last-child) {
-    padding-right: 8px;
+    margin-right: 8px;
 }
 .portfolio-button {
     font-family: var(--main-font);
@@ -378,16 +407,23 @@ a {
     color: var(--color-light-title);
     cursor: pointer;
 }
+
 .cards-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 34px;
     margin-bottom: 94px;
 }
 .cards-item {
     background: var(--color-light-title);
     border: 1px solid #EEE;
+    overflow: hidden;
     margin-right: 30px;
     margin-bottom: 30px;
+
+}
+.cards-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .cards-item:hover,
@@ -396,7 +432,8 @@ a {
 }
 
 .cards-img {
-    padding-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
 }
 .cards-title {
     font-family: var(--main-font);
@@ -415,4 +452,5 @@ a {
     letter-spacing: 0.03em;
     color: var(--main-color);
     padding-left: 20px;
+    margin-bottom: 20px;
 }
