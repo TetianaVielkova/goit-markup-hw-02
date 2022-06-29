@@ -157,6 +157,9 @@ a {
     letter-spacing: 0.02em;
 
     color: var(--main-color);
+}
+
+.contact-item:not(:last-child) {
     margin-right: 50px;
 }
 
