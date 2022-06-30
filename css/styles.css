@@ -72,6 +72,8 @@ a {
     padding: 0;
     background-color: var(--color-light-title);
     margin: 0;
+    border: 1px solid #ECECEC;
+    width: 100%;
 }
 
 .header > .container {
@@ -141,10 +143,6 @@ a {
     margin-right: 50px;
 }
 
-.line {
-    border: 1px solid #ECECEC;
-    width: 100%;
-}
 
 
 /*---------------HERO----------------*/
